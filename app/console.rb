@@ -22,6 +22,7 @@ module Console
   end
 
   # rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/MethodLength
   def console_start
     while menu
       selected = gets.chomp.to_i
@@ -53,4 +54,5 @@ module Console
     end
   end
   # rubocop:enable Metrics/CyclomaticComplexity
+  # rubocop:enable Metrics/MethodLength
 end
