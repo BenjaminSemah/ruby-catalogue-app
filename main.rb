@@ -1,4 +1,3 @@
-# main.rb file
 require_relative './app/app'
 
 def menu
