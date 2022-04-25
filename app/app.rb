@@ -1,7 +1,7 @@
 require_relative './console'
 
 class App
-include Console
+  include Console
 
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors
