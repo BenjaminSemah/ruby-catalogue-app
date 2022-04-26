@@ -18,4 +18,23 @@ class App
   def welcome
     puts 'Welcome to the Catalog of my Things!'
   end
+
+  def time_format(date)
+    "#{date.year}-#{date.month}-#{date.year}"
+  end
+
+  def list_music_albums
+    if @music_albums.empty?
+      puts 'No Music Albums available.'
+    else
+      @music_albums.each_with_index do |music_album, index|
+        puts "
+        (#{index})
+        Album: #{music_album.name},
+        Published Date: #{time_format(music_album.publish_date)},
+        Archived: #{music_album.archived},
+        Sportify: #{music_album.on_sportify}"
+      end
+    end
+  end
 end
