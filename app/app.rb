@@ -1,7 +1,8 @@
 require_relative './console'
+require_relative './date_giver'
 require_relative './music_album'
 require_relative './genre'
-require_relative './date_giver'
+require_relative '../data/music/music'
 
 class App
   include Console
@@ -34,7 +35,7 @@ class App
         puts "
         (#{index})
         Album: #{music_album.name},
-        Genre: #{music_album.genre},
+        Genre: #{music_album.genre.name},
         Published Date: #{time_format(music_album.publish_date)},
         Archived: #{music_album.archived},
         Spotify: #{music_album.on_spotify}"
@@ -56,6 +57,7 @@ class App
     genre_index = gets.chomp.to_i
     music_album.add_genre = @genres[genre_index]
     @music_albums.push(music_album)
+    save_music_albums(@music_albums)
     puts 'New Music Album created successfully!'
   end
 
