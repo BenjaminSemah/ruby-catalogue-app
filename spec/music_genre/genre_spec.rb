@@ -1,13 +1,13 @@
-require_relative '../../app/music_album.rb'
-require_relative '../../app/genre.rb'
-require_relative '../../app/item.rb'
+require_relative '../../app/music_album'
+require_relative '../../app/genre'
+require_relative '../../app/item'
 
 describe Genre do
   before :each do
     @afro_genre = Genre.new('Afro Music')
     @rap_genre = Genre.new('Rap Music')
-    @first_album = MusicAlbum.new('Logozo (Angelina Kidjo)', Time.new(1992, 03, 03), true, true)
-    @second_album = MusicAlbum.new('For My Brothers (Kojo Cue)', Time.new(2019, 11, 01), false, true)
+    @first_album = MusicAlbum.new('Logozo (Angelina Kidjo)', Time.new(1992, 0o3, 0o3), true, true)
+    @second_album = MusicAlbum.new('For My Brothers (Kojo Cue)', Time.new(2019, 11, 0o1), false, true)
     @first_album.add_genre = @afro_genre
     @second_album.add_genre = @rap_genre
   end

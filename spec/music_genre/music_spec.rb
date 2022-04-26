@@ -1,12 +1,12 @@
-require_relative '../../app/music_album.rb'
-require_relative '../../app/genre.rb'
-require_relative '../../app/item.rb'
+require_relative '../../app/music_album'
+require_relative '../../app/genre'
+require_relative '../../app/item'
 
 describe MusicAlbum do
   before :each do
-    @first_album = MusicAlbum.new('Logozo (Angelina Kidjo)', Time.new(1992, 03, 03), true, true)
-    @second_album = MusicAlbum.new('For My Brothers (Kojo Cue)', Time.new(2019, 11, 01), false, true)
-    @third_album = MusicAlbum.new('Beautiful Imperfection (Asa)', Time.new(2022, 11, 01), false, false)
+    @first_album = MusicAlbum.new('Logozo (Angelina Kidjo)', Time.new(1992, 0o3, 0o3), true, true)
+    @second_album = MusicAlbum.new('For My Brothers (Kojo Cue)', Time.new(2019, 11, 0o1), false, true)
+    @third_album = MusicAlbum.new('Beautiful Imperfection (Asa)', Time.new(2022, 11, 0o1), false, false)
     @afro_genre = Genre.new('Afro Music')
     @rap_genre = Genre.new('Rap Music')
     @first_album.add_genre = @afro_genre
@@ -15,7 +15,6 @@ describe MusicAlbum do
   end
 
   context 'Test for MusicAlbum class' do
-
     it 'checks for the class of created MusicAlbum' do
       music_album_class = @first_album.class
       expect(music_album_class).to be MusicAlbum
@@ -23,7 +22,7 @@ describe MusicAlbum do
 
     it 'checks attribute values of Music Albums' do
       expect(@first_album.id).to be_between(1, 100_000).inclusive
-      expect(@second_album.publish_date).to eq Time.new(2019, 11, 01)
+      expect(@second_album.publish_date).to eq Time.new(2019, 11, 0o1)
       expect(@third_album.on_spotify).to be false
       expect(@third_album.archived).to be false
     end
