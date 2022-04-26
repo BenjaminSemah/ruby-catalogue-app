@@ -16,7 +16,7 @@ describe MusicAlbum do
 
   context 'Test for MusicAlbum class' do
 
-    it 'checks for an instance of MusicAlbum' do
+    it 'checks for the class of created MusicAlbum' do
       music_album_class = @first_album.class
       expect(music_album_class).to be MusicAlbum
     end
