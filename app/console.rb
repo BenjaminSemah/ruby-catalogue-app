@@ -6,7 +6,7 @@ module Console
     options = [
       'List all books',
       'List all music albums',
-      'List of games',
+      'List all games',
       'List all genres',
       'List all labels',
       'List all authors',
@@ -34,7 +34,7 @@ module Console
       when 3
         list_all_games
       when 4
-        list_genres
+        list_all_genres
       when 5
         list_all_labels
       when 6

@@ -1,6 +1,6 @@
 require_relative './item'
 
-class MusicAlbum < item
+class MusicAlbum < Item
   attr_accessor :on_spotify
 
   # rubocop:disable Style/OptionalBooleanParameter
