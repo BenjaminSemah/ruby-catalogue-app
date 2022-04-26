@@ -1,8 +1,11 @@
 require_relative './console'
+require_relative './music_album'
+require_relative './genre'
+require_relative './date_giver'
 
 class App
   include Console
-
+  include DateGiver
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors
 
@@ -10,8 +13,8 @@ class App
     @books = []
     @music_albums = []
     @games = []
-    @genres = []
     @labels = []
+    @genres = [Genre.new('Afrobeats'), Genre.new('Rap')]
     @authors = []
   end
 
@@ -31,11 +34,29 @@ class App
         puts "
         (#{index})
         Album: #{music_album.name},
+        Genre: #{music_album.genre},
         Published Date: #{time_format(music_album.publish_date)},
         Archived: #{music_album.archived},
-        Sportify: #{music_album.on_sportify}"
+        Spotify: #{music_album.on_spotify}"
       end
     end
+  end
+
+  def add_music_album
+    print 'Album Name: '
+    name = gets.chomp
+    year = select_year
+    month = select_month
+    day = select_day
+
+    music_album = MusicAlbum.new(name, Time.new(year, month, day))
+
+    puts 'Select genre: '
+    list_all_genres
+    genre_index = gets.chomp.to_i
+    music_album.add_genre = @genres[genre_index]
+    @music_albums.push(music_album)
+    puts 'New Music Album created successfully!'
   end
 
   def list_all_genres

@@ -6,7 +6,7 @@ module Console
     options = [
       'List all books',
       'List all music albums',
-      'List of games',
+      'List all games',
       'List all genres',
       'List all labels',
       'List all authors',
