@@ -37,4 +37,14 @@ class App
       end
     end
   end
+
+  def list_all_genres
+    if @genres.empty?
+      puts 'No Genres available'
+    else
+      @genres.each_with_index do |genre, index|
+        puts "(#{index}) Genre: #{genre.name}"
+      end
+    end
+  end
 end

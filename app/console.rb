@@ -34,7 +34,7 @@ module Console
       when 3
         list_all_games
       when 4
-        list_genres
+        list_all_genres
       when 5
         list_all_labels
       when 6
