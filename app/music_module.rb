@@ -22,6 +22,7 @@ module MusicModule
     puts ''
   end
 
+  # rubocop:disable Metrics/MethodLength
   def add_music_album
     print 'Album Name: '
     name = gets.chomp
@@ -29,10 +30,10 @@ module MusicModule
     month = select_month
     day = select_day
 
-    print "Available on Spotify? (Y/N): "
+    print 'Available on Spotify? (Y/N): '
     spotify_answer = gets.chomp.downcase
     until %w[y n].include?(spotify_answer)
-      print "Available on Spotify? (Y/N): "
+      print 'Available on Spotify? (Y/N): '
       spotify_answer = gets.chomp.downcase
     end
 
@@ -49,6 +50,7 @@ module MusicModule
     save_music_albums(@music_albums)
     puts 'New Music Album created successfully!'
   end
+  # rubocop:enable Metrics/MethodLength
 
   def list_all_genres
     if @genres.empty?
