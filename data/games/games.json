@@ -1,0 +1,65 @@
+[
+  {
+    "id": 4389,
+    "name": "Need for speed",
+    "date": 1369864800,
+    "multiplayer": true,
+    "last_played_at": 1649973600,
+    "archived": false,
+    "author_id": null
+  },
+  {
+    "id": 9589,
+    "name": "Call of duty",
+    "date": 1367704800,
+    "multiplayer": true,
+    "last_played_at": 1590012000,
+    "archived": false,
+    "author_id": null
+  },
+  {
+    "id": 1279,
+    "name": "Grand theft Auto",
+    "date": 1274738400,
+    "multiplayer": true,
+    "last_played_at": 1580598000,
+    "archived": false,
+    "author_id": null
+  },
+  {
+    "id": 8138,
+    "name": "Mortal Kombat",
+    "date": 1135465200,
+    "multiplayer": true,
+    "last_played_at": 1653861600,
+    "archived": false,
+    "author_id": null
+  },
+  {
+    "id": 6693,
+    "name": "Zuma",
+    "date": 1261695600,
+    "multiplayer": true,
+    "last_played_at": 1590357600,
+    "archived": false,
+    "author_id": null
+  },
+  {
+    "id": 36493,
+    "name": "fjg",
+    "date": 1273096800,
+    "multiplayer": false,
+    "last_played_at": 1588716000,
+    "archived": false,
+    "author_id": null
+  },
+  {
+    "id": 8902,
+    "name": "googf",
+    "date": 1209938400,
+    "multiplayer": false,
+    "last_played_at": 1588716000,
+    "archived": false,
+    "author_id": "#<Author:0x00000244001d5d08>"
+  }
+]

@@ -1,12 +1,17 @@
 require_relative './console'
 require_relative './music_album'
+require_relative './game'
+require_relative './author'
 require_relative './genre'
 require_relative './music_module'
+require_relative './game_module'
+require 'json'
 
 class App
   include Console
   include DateGiver
   include MusicModule
+  include GameModule
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors
 
@@ -28,5 +33,23 @@ class App
   def load_data
     @music_albums = load_music_albums
     @genres = load_genres
+    @games = read_games(@authors)
+    @authors = read_authors
+    seed_random_data
+  end
+
+  def time_format(date)
+    "#{date.year}-#{date.month}-#{date.year}"
+  end
+
+  def seed_random_data
+    if @authors.empty?
+      @authors.push(Author.new('Josphat', 'Nkonde'))
+      @authors.push(Author.new('Benjamin', 'Semah'))
+      @authors.push(Author.new('Butler', 'Muwo'))
+      save_authors(@authors)
+    else
+      puts ' '
+    end
   end
 end
