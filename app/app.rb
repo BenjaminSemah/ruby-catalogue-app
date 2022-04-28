@@ -6,12 +6,15 @@ require_relative './genre'
 require_relative './music_module'
 require_relative './game_module'
 require 'json'
+require_relative './booklist'
+
 
 class App
   include Console
   include DateGiver
   include MusicModule
   include GameModule
+  include Booklist
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors
 
@@ -31,6 +34,8 @@ class App
   end
 
   def load_data
+    @books = populate_books
+    @labels = populate_labels
     @music_albums = load_music_albums
     @genres = load_genres
     @games = read_games(@authors)

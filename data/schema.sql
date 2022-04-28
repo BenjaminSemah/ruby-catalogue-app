@@ -33,3 +33,17 @@ CREATE TABLE Games (
     PRIMARY KEY (id),
     FOREIGN KEY (author_id) REFERENCES Authors(id)
 );
+
+CREATE TABLE books(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  publisher VARCHAR(255),
+  cover_state VARCHAR(255),
+  FOREIGN KEY(id) REFERENCES item(id)
+);
+
+CREATE TABLE labels(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  title VARCHAR(255),
+  color VARCHAR(255),
+  PRIMARY KEY(id)
+);
