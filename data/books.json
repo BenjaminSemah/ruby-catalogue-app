@@ -10,5 +10,11 @@
     "publisher" : "John elton",
     "published_date" : "2012-06-07",
     "cover_state" : "good"
+  },
+  {
+    "name" : "holmes ",
+    "publisher" : "jons",
+    "published_date" : "2010-02-01",
+    "cover_state" : "good"
   }
 ]
