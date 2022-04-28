@@ -1,0 +1,12 @@
+[
+  { "name": "Afrobeats", "id": "100"},
+  { "name": "Hip hop", "id": "101"},
+  { "name": "Highlife", "id": "102"},
+  { "name": "Reggae", "id": "103"},
+  { "name": "Country", "id": "104"},
+  { "name": "Jazz", "id": "105"},
+  { "name": "Soul", "id": "106"},
+  { "name": "R&B", "id": "107"},
+  { "name": "Classical", "id": "108"},
+  { "name": "Drill", "id": "109"}
+]
