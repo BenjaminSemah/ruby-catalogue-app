@@ -83,4 +83,3 @@ module Booklist
     end
   end
 end
-

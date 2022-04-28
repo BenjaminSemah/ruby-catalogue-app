@@ -16,5 +16,11 @@
     "publisher" : "jons",
     "published_date" : "2010-02-01",
     "cover_state" : "good"
+  },
+  {
+    "name" : "abc",
+    "publisher" : "xyz",
+    "published_date" : "2020-02-02",
+    "cover_state" : "bad"
   }
 ]

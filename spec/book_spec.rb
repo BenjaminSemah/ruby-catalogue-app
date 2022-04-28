@@ -13,9 +13,8 @@ describe Book do
       expect(book_class).to be Book
     end
 
-    it 'returns true if parent method returns true OR if cover_state equals to "bad"' do
-      @book.move_to_archive
-      expect(@book.archived).to eql true
+    it 'tests to see if it returns the book instance' do
+      expect(@book).to be_instance_of(Book)
     end
 
     it 'inherits from Item class' do

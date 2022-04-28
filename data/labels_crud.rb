@@ -3,4 +3,4 @@ def populate_labels
     Label.new(label['name'], label['color'])
     Label.new(label['title'], label['color'])
   end
-  end
+end
