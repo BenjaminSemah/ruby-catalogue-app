@@ -22,7 +22,7 @@ Start by cloning the repository.
 
 Navigate to the created folder.
 
-`cd catalog-of-my-things`
+`cd ruby-catalogue-app`
 
 Install all the dependencies.
 
@@ -56,7 +56,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/BenjaminSemah/ruby-catalogue-app/issues).
 
 ## Show your support
 
