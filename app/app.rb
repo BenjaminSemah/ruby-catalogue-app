@@ -2,11 +2,13 @@ require_relative './console'
 require_relative './music_album'
 require_relative './genre'
 require_relative './music_module'
+require_relative './booklist'
 
 class App
   include Console
   include DateGiver
   include MusicModule
+  include Booklist
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors
 
@@ -28,5 +30,7 @@ class App
   def load_data
     @music_albums = load_music_albums
     @genres = load_genres
+    @books = populate_books
+    @labels = populate_labels
   end
 end

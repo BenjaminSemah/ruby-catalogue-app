@@ -1,11 +1,10 @@
-require_relative '.\item'
+require_relative './item'
 
 class Book < Item
   attr_accessor :cover_state, :publisher
 
   # rubocop:disable Metrics/ParameterLists
-  # rubocop:disable Style/OptionalBooleanParameter
-  def initialize(name, _publish_date, publisher, cover_state, archived = false, id = Random.rand(1..100_000))
+  def initialize(name, published_date, publisher, cover_state, archived = false, id = Random.rand(1..100_000))
     super(name, published_date, archived, id)
     @publisher = publisher
     @cover_state = cover_state

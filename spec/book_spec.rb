@@ -3,7 +3,7 @@ require_relative '../app/item'
 
 describe Book do
   before :each do
-    @book = Book.new('bad', 'Marriage', 'longhorn', Time.new(2021, 0o5, 16), true)
+    @book = Book.new('marriage', Time.new(2021, 0o5, 16), 'longhorn', 'bad')
   end
 
   context 'When testing the Book class' do

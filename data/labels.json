@@ -1,34 +1,18 @@
-{
-    "name" : "Gift Card",
-    "color" : "Red"
+[
+  {
+    "title" : "gift card",
+    "color" : "red"
   },
   {
-    "name" : "Gift card",
-    "color" : "Black"
+    "title" : "gift",
+    "color" : "red"
   },
   {
-    "name" : "Gift card",
-    "color" : "White"
+    "title" : "gift",
+    "color" : "green"
   },
   {
-    "title" : "Gift ",
-    "color" : "Brown"
-  },
-  {
-    "title" : "Gift",
-    "color" : "Blue"
-  },
-  {
-    "title" : "ihbiughu",
-    "color" : "uiuuh"
-  },
-  {
-    "title" : "kbjhbij",
-    "color" : "bihu"
-  },
-  {
-    "title" : "ihhih",
-    "color" : "oiui"
+    "title" : "gift",
+    "color" : "red"
   }
 ]
- 
