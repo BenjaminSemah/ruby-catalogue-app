@@ -1,0 +1,26 @@
+[
+  {
+    "name" : "My stuborn Husband",
+    "publisher" : "Watson wills",
+    "published_date" : "2013-01-03",
+    "cover_state" : "good"
+  },
+  {
+    "name" : "Chicken manana soup recipe",
+    "publisher" : "John elton",
+    "published_date" : "2012-06-07",
+    "cover_state" : "good"
+  },
+  {
+    "name" : "holmes ",
+    "publisher" : "jons",
+    "published_date" : "2010-02-01",
+    "cover_state" : "good"
+  },
+  {
+    "name" : "abc",
+    "publisher" : "xyz",
+    "published_date" : "2020-02-02",
+    "cover_state" : "bad"
+  }
+]
