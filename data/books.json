@@ -1,26 +1,14 @@
 [
   {
-    "name" : "koo",
-    "publisher" : "chu",
-    "published_date" : "gvyyug",
-    "cover_state" : "hubyuuh"
+    "name" : "My stuborn Husband",
+    "publisher" : "Watson wills",
+    "published_date" : "2013-01-03",
+    "cover_state" : "good"
   },
   {
-    "name" : "river in between",
-    "publisher" : "jonathan koo",
-    "published_date" : "2015-01-02",
-    "cover_state" : "school"
-  },
-  {
-    "name" : "butler",
-    "publisher" : "benjamin",
-    "published_date" : "2015-06-07",
-    "cover_state" : "bad"
-  },
-  {
-    "name" : "river in between kenye",
-    "publisher" : "butler",
-    "published_date" : "2015-02-11",
-    "cover_state" : "purple"
+    "name" : "Chicken manana soup recipe",
+    "publisher" : "John elton",
+    "published_date" : "2012-06-07",
+    "cover_state" : "good"
   }
 ]

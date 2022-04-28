@@ -9,7 +9,7 @@ module Booklist
       puts 'You don\'t have any Books.'
     else
       @books.each_with_index do |book, index|
-        puts "#{index} Title: #{book.name}, Publisher: #{book.publisher}, Publish_date:#{book.publish_date},
+        puts "#{index} Title: #{book.name}, Publisher: #{book.publisher}, Publish_date: #{book.publish_date},
         Cover State: #{book.cover_state}"
         puts ''
       end
@@ -83,3 +83,4 @@ module Booklist
     end
   end
 end
+
