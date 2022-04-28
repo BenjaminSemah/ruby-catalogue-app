@@ -8,7 +8,6 @@ require_relative './game_module'
 require 'json'
 require_relative './booklist'
 
-
 class App
   include Console
   include DateGiver
