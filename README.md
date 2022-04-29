@@ -1,10 +1,9 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Ruby-CatalogueApp-brown)
 
-# Catalog of my things
+# Ruby Catalogue App
 
-> In this project, you can create items (games, music albums, books) and store them in a database.
+> This project is a catalogue app that allows users to create and store data of things such as books, music albums and games.
 
-This is Ruby capstone project for Microverse program.
 
 ## Built With
 
